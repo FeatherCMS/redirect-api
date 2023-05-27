@@ -10,7 +10,8 @@ let package = Package(
         .library(name: "RedirectObjects", targets: ["RedirectObjects"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/FeatherCMS/feather-objects", .branch("main")),
+		.package(path: "../feather-objects"),
+//        .package(url: "https://github.com/FeatherCMS/feather-objects", .branch("main")),
     ],
     targets: [
         .target(name: "RedirectObjects", dependencies: [
