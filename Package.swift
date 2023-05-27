@@ -10,8 +10,10 @@ let package = Package(
         .library(name: "RedirectObjects", targets: ["RedirectObjects"]),
     ],
     dependencies: [
-		.package(path: "../feather-objects"),
-//        .package(url: "https://github.com/FeatherCMS/feather-objects", .branch("main")),
+//		.package(path: "../feather-objects"),
+        .package(url: "https://github.com/Rando-Coderissian/feather-objects", .branch("test-refactor-modules")),
+		
+//        .package(url: "https://github.com/feathercms/feather-objects", .branch("main")),
     ],
     targets: [
         .target(name: "RedirectObjects", dependencies: [
