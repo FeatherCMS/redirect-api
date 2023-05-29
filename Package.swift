@@ -4,13 +4,13 @@ import PackageDescription
 let package = Package(
     name: "redirect-objects",
     platforms: [
-       .macOS(.v10_15),
+       .macOS(.v12),
     ],
     products: [
         .library(name: "RedirectObjects", targets: ["RedirectObjects"]),
     ],
-    dependencies: [
-        .package(url: "https://github.com/FeatherCMS/feather-objects", .branch("main")),
+    dependencies: [		
+       .package(url: "https://github.com/feathercms/feather-objects", .branch("main")),
     ],
     targets: [
         .target(name: "RedirectObjects", dependencies: [
